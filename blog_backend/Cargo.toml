@@ -1,0 +1,24 @@
+[package]
+name = "blog_backend"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+
+[dependencies]
+sqlx = {version = "0.6", features = ["postgres", "time", "bstr", "runtime-tokio-rustls"]}
+serde = {version = "1", features = ["derive"]}
+tokio = {version = "1.0", features = ["full"]}
+futures = "0.3"
+axum = "0.5"
+futures-util = "0.3.19"
+adventurous-frontend = {path = "../adventurous_frontend/"}
+thiserror = "1.0"
+env_logger = "0.9.0"
+time = { version = "0.3", features = ["serde"]}
+blog_model = { path = "../blog_model/" }
+tower-http = "0.3.4"
+tower-service = "0.3.2"
+tracing = { version = "0.1.36", features = ["log"] }
+

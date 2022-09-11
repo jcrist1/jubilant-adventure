@@ -1,0 +1,21 @@
+[package]
+name = "blog_model"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = "1.0"
+meilisearch-sdk= "0.15"
+time = { version = "0.3", features = ["serde"] } 
+pulldown-cmark = "0.9"
+html-escape = "0.2.11"
+ammonia = "3.2.1"
+serde_json = "1.0.85"
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+# Defines a feature named `webp` that does not enable any other features.
+sqlx = { version = "0.6", features = ["postgres", "runtime-tokio-rustls", "time"]}
+
+

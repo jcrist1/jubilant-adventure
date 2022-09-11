@@ -1,0 +1,41 @@
+body {
+    background: #AAFAEE;
+}
+
+.content-body {
+    text-align: left;
+    
+}
+.content-header {
+    text-align: center;
+}
+
+.content-container {
+    background: #FAFAFF;
+    box-shadow: 5px 5px 5px rgba(50, 50, 50, 0.1);
+    border: 1pt;
+    border-color: #888888;
+    border-style: solid;
+    border-radius: 2pt;
+    margin: 4pt;
+    padding: 5pt;
+}
+
+.nav-button {
+    text-align: center;
+    height: 50pt;
+    background: #FAFAFF;
+    border: 1pt;
+    border-color: #888888;
+    border-style: solid;
+    margin: 4pt;
+    box-shadow: 5px 5px 5px rgba(50, 50, 50, 0.1);
+    border-radius: 2pt;
+    padding: 5pt;
+    line-height: 35pt;
+
+}
+.nav-content {
+    vertical-align: middle;
+}
+

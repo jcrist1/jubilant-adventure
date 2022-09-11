@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "jubilant_backend",
+    "adventurous_frontend",
+    "blog_backend",
+    "blog_frontend",
+    "blog_model",
+]
+
